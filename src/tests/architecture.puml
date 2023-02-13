@@ -1,0 +1,10 @@
+@startuml
+component [controllers]
+component [usecases]
+component [services]
+component [repositories]
+    [controllers] --> [usecases]
+    [usecases] --> [services]
+    [usecases] --> [repositories]
+    [services] --> [repositories]
+@enduml
